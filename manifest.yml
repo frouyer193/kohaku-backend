@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: eu-de.mybluemix.net
+  name: kohaku-backend
+  host: kohaku-backend
+  disk_quota: 1024M
+  command: node app.bundle.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+  - kohaku-backend-cloudantNoSQLDB

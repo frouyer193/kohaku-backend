@@ -1,0 +1,13 @@
+##### PROJECT IGNORE #####
+dist
+node_modules
+src/database/vcap-local.json
+*-error.log
+**/data/**
+
+##### VSCODE #####
+.vscode
+
+
+##### SENSITIVE DATA #####
+vcap-local.json
